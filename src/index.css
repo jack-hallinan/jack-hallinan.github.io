@@ -31,8 +31,21 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
+  margin: 0;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #ce1b1b;
 }
 
 button {
