@@ -13,6 +13,9 @@ const CustomListItem = styled(ListItem)`
     width: 50%;
     flex-direction: column;
     padding: 0 1rem 0 0;
+    @media (max-width: ${ screenSizes.medium }) {
+        width: 100%;
+    }
 `
 const CustomDivider = styled(Divider)`
     width: 100%;
@@ -33,7 +36,8 @@ const TextField = styled.div`
 
 export interface BioSnippetProp {
     label: string,
-    value: string
+    value: string,
+    topDivider?: boolean
 }
 
 const bioSnippets: BioSnippetProp[] = [
@@ -50,6 +54,7 @@ const bioSnippets: BioSnippetProp[] = [
 const BioSnippet = (props: BioSnippetProp) => {
     return (
         <CustomListItem>
+            {props.topDivider && <CustomDivider/>}
             <TextField>
                 <h6>{`${props.label}:`}</h6>
                 <p>{props.value}</p>
@@ -62,10 +67,10 @@ const BioSnippet = (props: BioSnippetProp) => {
 const BioSnippets = () => {
     return(
         <Container>
-                { bioSnippets
-                .map((bioSnippetData: BioSnippetProp, index: number) => (
-                    <BioSnippet key={bioSnippetData.label} {...bioSnippetData}/>
-                ))}
+            { bioSnippets
+            .map((bioSnippetData: BioSnippetProp, index: number) => (
+                <BioSnippet key={index} topDivider={index < 2} {...bioSnippetData}/>
+            ))}
         </Container>
     )
 }

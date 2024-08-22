@@ -2,6 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 
   color-scheme: light dark;
   color: #0A0A06;
@@ -25,13 +28,14 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: start;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   line-height: 1.1;
   margin: 0;
 }
@@ -45,7 +49,7 @@ h6 {
   margin: 0;
   font-size: 0.8rem;
   font-weight: 300;
-  color: #ce1b1b;
+  color: #990000;
 }
 
 button {

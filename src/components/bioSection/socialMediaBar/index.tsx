@@ -31,7 +31,7 @@ const SocialMediaBar = () => {
         <Box sx={{ display: "flex", alignItems: 'center', textAlign: 'center'}}>
             {
                 socialMedia.map((socialMediaInfo: SocialMediaProps) =>(
-                    <SocialMediaButton {...socialMediaInfo}/>
+                    <SocialMediaButton key={socialMediaInfo.name} {...socialMediaInfo}/>
                 ))
             }
         </Box>

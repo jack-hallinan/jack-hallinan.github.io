@@ -7,6 +7,6 @@ export const lightTheme = {
 
 export const screenSizes = {
     small: "400px",
-    medium: "700px",
+    medium: "750px",
     large: "1000px"
 }
