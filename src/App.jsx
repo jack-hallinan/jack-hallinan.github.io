@@ -2,7 +2,7 @@ import AboutMeSection from './components/aboutSection'
 import BioSection from './components/bioSection'
 import styled from '@emotion/styled'
 import { screenSizes } from './themes'
-import { Box } from '@mui/material'
+import WorkSection from './components/workSection'
 
 const Container = styled.div`
   display: flex;
@@ -19,12 +19,11 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Box sx={{width: "100vw"}}>
     <Container>
       <BioSection/>
       <AboutMeSection/>
+      <WorkSection/>
     </Container>
-    </Box>
   )
 }
 
