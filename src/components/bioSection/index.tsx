@@ -8,13 +8,19 @@ import { lightTheme, screenSizes } from "../../themes";
 const Container = styled(Paper)`
     display: flex;
     padding: 1rem;
-    margin: 0 5%;
     gap: 0.5rem 2rem;
     flex-direction: row-wrap;
     @media (max-width: ${ screenSizes.medium }) {
         flex-direction: column;
     }
 `
+
+const Headshot = styled.img`
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.1rem solid ${ lightTheme.primaryColor };
+`
+
 const InfoContainer = styled(Box)`
     display: flex;
     flex-direction: column;
@@ -24,7 +30,7 @@ const InfoContainer = styled(Box)`
 const BioSection = () => {
     return (
         <Container>
-            <Box sx={{width: "8rem", height: "12.8rem", background: lightTheme.secondaryColor}}/>
+            <Headshot src="src/assets/Hallinan_Jack_Headshot.jpg" sizes="fluid"/>
             <InfoContainer>
                 <Box sx={{display:"flex", alignItems: 'end', gap: "1rem", flexFlow:"wrap"}}>
                     <h1>Jack Hallinan</h1>

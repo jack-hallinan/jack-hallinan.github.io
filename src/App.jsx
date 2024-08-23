@@ -1,11 +1,12 @@
 import BioSection from './components/bioSection'
-import { Box } from '@mui/material'
+import { Box, Divider } from '@mui/material'
 
 function App() {
   return (
-    <Box sx={{display:"flex", flexDirection: "column", alignItems:"center", gap:"2rem"}}>
+    <Box sx={{display:"flex", flexDirection: "column", gap:"2rem", margin:"0 5%"}}>
       <BioSection/>
-      <p>Fac</p>
+      <h2>About Me</h2>
+      <Divider/>
     </Box>
   )
 }
