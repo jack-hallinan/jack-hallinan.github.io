@@ -13,7 +13,7 @@ const CustomListItem = styled(ListItem)`
     width: 50%;
     flex-direction: column;
     padding: 0 1rem 0 0;
-    @media (max-width: ${ screenSizes.medium }) {
+    @media (max-width: ${ screenSizes.small }) {
         width: 100%;
     }
 `
@@ -31,6 +31,10 @@ const TextField = styled.div`
     flex-direction: row-wrap;
     @media (max-width: ${ screenSizes.large }) {
         flex-direction: column;
+    }
+
+    @media (max-width: ${ screenSizes.small }) {
+        padding: 0.1rem;
     }
 `
 

@@ -1,12 +1,29 @@
+import AboutMeSection from './components/aboutSection'
 import BioSection from './components/bioSection'
-import { Box, Divider } from '@mui/material'
+import styled from '@emotion/styled'
+import { screenSizes } from './themes'
+import { Box } from '@mui/material'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 5% 0 5%;
+  max-width: 60rem;
+  align-items: center;
+
+  @media (max-width: ${ screenSizes.medium }) {
+      margin-top: 4%;
+  }
+`
 
 function App() {
   return (
-    <Box sx={{display:"flex", flexDirection: "column", gap:"2rem", margin:"0 5%"}}>
+    <Box sx={{width: "100vw"}}>
+    <Container>
       <BioSection/>
-      <h2>About Me</h2>
-      <Divider/>
+      <AboutMeSection/>
+    </Container>
     </Box>
   )
 }

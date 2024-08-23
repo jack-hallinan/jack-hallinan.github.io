@@ -4,6 +4,7 @@ import { Box, Paper } from "@mui/material";
 import BioSnippets from "./bioSnippets";
 import SocialMediaBar from "./socialMediaBar";
 import { lightTheme, screenSizes } from "../../themes";
+import { SportsFootball } from "@mui/icons-material";
 
 const Container = styled(Paper)`
     display: flex;
@@ -27,13 +28,19 @@ const InfoContainer = styled(Box)`
     flex: 1;
 `
 
+const Name = styled.h1`
+    @media (max-width: ${ screenSizes.small }) {
+        font-size: 2.2rem;
+    }
+`
+
 const BioSection = () => {
     return (
         <Container>
             <Headshot src="src/assets/Hallinan_Jack_Headshot.jpg" sizes="fluid"/>
             <InfoContainer>
-                <Box sx={{display:"flex", alignItems: 'end', gap: "1rem", flexFlow:"wrap"}}>
-                    <h1>Jack Hallinan</h1>
+                <Box sx={{display:"flex", alignItems: 'end', gap: "0 1rem", flexFlow:"wrap"}}>
+                    <Name>Jack Hallinan</Name>
                     <SocialMediaBar/>
                 </Box>
                 <BioSnippets/>
