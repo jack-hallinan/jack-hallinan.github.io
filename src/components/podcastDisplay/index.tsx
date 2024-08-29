@@ -2,9 +2,7 @@ import { Box, Accordion, AccordionSummary, AccordionDetails } from "@mui/materia
 import React from "react";
 import { lightTheme } from "../../themes";
 import { ExpandMoreOutlined } from "@mui/icons-material";
-
-
-const description = "Jack Hallinan, Ben Cohen and a rotating cast of guests discuss the wide world of soccer from their unique perspective as American fans of the world's game. They focus heavily on the Premier League, Champions League and other major soccer news with a lens that balances both deep analysis and a light, humorous touch."
+import { TALK_OF_TROY_DESCRIPTION } from "../../data";
 
 const PodcastDisplay = () => {
     const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -31,13 +29,13 @@ const PodcastDisplay = () => {
                 display: '-webkit-box', 
                 WebkitBoxOrient: 'vertical', 
                 WebkitLineClamp: 2
-            }}>{description}</p>}
+            }}>{TALK_OF_TROY_DESCRIPTION}</p>}
             </Box>
             </AccordionSummary>
             <AccordionDetails>
             <Box sx={{ margin: "1rem", display: "flex", flexFlow: "row wrap", gap: "1rem"}}>
                 <iframe style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/show/7ipJaqfqreC974LvPWZJa0/video?utm_source=generator" width="300" height="200" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <p style={{minWidth:"15rem", maxWidth: "25rem"}}>{description}</p>
+                <p style={{minWidth:"15rem", maxWidth: "25rem"}}>{TALK_OF_TROY_DESCRIPTION}</p>
             </Box>
             </AccordionDetails>
         </Accordion>

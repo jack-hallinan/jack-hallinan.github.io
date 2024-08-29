@@ -21,7 +21,7 @@ const AboutMeSection = () => {
             <h2 style={{marginLeft: "1rem"}}>About Me</h2>
             <Divider/>
             <p style={{maxWidth: "50rem", marginLeft: "1rem"}}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <Link href="youtube.com">aliquip ex ea commodo consequat</Link>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <Link href="youtube.com">cupidatat non proident</Link>, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">aliquip ex ea commodo consequat</Link>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">cupidatat non proident</Link>, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </Box>
     )

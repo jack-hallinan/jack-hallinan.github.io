@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Box, Divider, List, ListItem, ListItemText, Paper } from "@mui/material";
+import { Divider, List, ListItem, ListItemText, Paper } from "@mui/material";
 import { screenSizes } from "../../../themes";
+import { BIO_SNIPPETS } from "../../../data";
 
 const Container = styled(List)`
     display: flex;
@@ -44,17 +45,6 @@ export interface BioSnippetProp {
     topDivider?: boolean
 }
 
-const bioSnippets: BioSnippetProp[] = [
-    { label: "University", value: "University of Southern California" },
-    { label: "Degree", value: "B.A. Journalism" },
-    { label: "Graduation", value: "May 2025" },
-    { label: "Hometown", value: "Wilmette, IL" },
-    { label: "University", value: "University of Southern California" },
-    { label: "Degree", value: "B.A. Journalism" },
-    { label: "Graduation", value: "May 2025" },
-    { label: "Hometown", value: "Wilmette, IL" }
-]
-
 const BioSnippet = (props: BioSnippetProp) => {
     return (
         <CustomListItem>
@@ -71,7 +61,7 @@ const BioSnippet = (props: BioSnippetProp) => {
 const BioSnippets = () => {
     return(
         <Container>
-            { bioSnippets
+            { BIO_SNIPPETS
             .map((bioSnippetData: BioSnippetProp, index: number) => (
                 <BioSnippet key={index} topDivider={index < 2} {...bioSnippetData}/>
             ))}
