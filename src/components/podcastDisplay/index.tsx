@@ -1,7 +1,7 @@
-import { Box, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { Box, Accordion, AccordionSummary, AccordionDetails, Button } from "@mui/material";
 import React from "react";
 import { lightTheme } from "../../themes";
-import { ExpandMoreOutlined } from "@mui/icons-material";
+import { ExpandMoreOutlined, NavigateNext } from "@mui/icons-material";
 import { TALK_OF_TROY_DESCRIPTION } from "../../data";
 
 const PodcastDisplay = () => {
@@ -35,7 +35,16 @@ const PodcastDisplay = () => {
             <AccordionDetails>
             <Box sx={{ margin: "1rem", display: "flex", flexFlow: "row wrap", gap: "1rem"}}>
                 <iframe style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/show/7ipJaqfqreC974LvPWZJa0/video?utm_source=generator" width="300" height="200" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <p style={{minWidth:"15rem", maxWidth: "25rem"}}>{TALK_OF_TROY_DESCRIPTION}</p>
+                <Box>
+                    <p style={{minWidth:"15rem", maxWidth: "25rem"}}>{TALK_OF_TROY_DESCRIPTION}</p>
+                    <Button 
+                        style={{color: lightTheme.primaryColor}}
+                        href="https://open.spotify.com/show/7ipJaqfqreC974LvPWZJa0"
+                        >
+                        Check it out on Spotify 
+                        <NavigateNext/>
+                    </Button>
+                </Box>
             </Box>
             </AccordionDetails>
         </Accordion>

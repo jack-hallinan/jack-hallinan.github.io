@@ -22,8 +22,8 @@ function App() {
   return (
     <Container>
       <BioSection/>
-      <PodcastDisplay/>
       <AboutMeSection/>
+      <PodcastDisplay/>
       <WorkSection/>
     </Container>
   )

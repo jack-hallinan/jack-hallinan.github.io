@@ -12,6 +12,7 @@ import {
     SportsBasketball,
     Article,
     AudioFile,
+    LinkedIn,
     SportsBar,
     VolumeUp
 } from "@mui/icons-material";

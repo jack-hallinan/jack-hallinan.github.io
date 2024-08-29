@@ -20,6 +20,7 @@ const WorkItem = (props: WorkLinkProps) => {
                 },
                 gap: "1rem"
             }}
+            href={props.url}
         >
             {props.icon}
             {props.name}
