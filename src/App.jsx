@@ -3,6 +3,7 @@ import BioSection from './components/bioSection'
 import styled from '@emotion/styled'
 import { screenSizes } from './themes'
 import WorkSection from './components/workSection'
+import PodcastDisplay from './components/podcastDisplay'
 
 const Container = styled.div`
   display: flex;
@@ -21,6 +22,7 @@ function App() {
   return (
     <Container>
       <BioSection/>
+      <PodcastDisplay/>
       <AboutMeSection/>
       <WorkSection/>
     </Container>
