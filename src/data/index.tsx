@@ -1,5 +1,6 @@
 import React from "react";
 import { lightTheme } from "../themes";
+import SpotifyIcon from "../assets/spotify";
 import { 
     Facebook, 
     Instagram, 
@@ -14,7 +15,8 @@ import {
     AudioFile,
     LinkedIn,
     SportsBar,
-    VolumeUp
+    VolumeUp,
+    Movie
 } from "@mui/icons-material";
 import { SocialMediaProps } from "../components/bioSection/socialMediaBar";
 import { WorkLinkProps } from "../components/workSection";
@@ -24,26 +26,28 @@ export const TALK_OF_TROY_DESCRIPTION: string = "Jack Hallinan, Ben Cohen and a 
 
 export const BIO_SNIPPETS: BioSnippetProp[] = [
     { label: "University", value: "University of Southern California" },
-    { label: "Degree", value: "B.A. Journalism" },
+    { label: "Major", value: "B.A. Journalism, B.A. Economics" },
     { label: "Graduation", value: "May 2025" },
-    { label: "Hometown", value: "Wilmette, IL" },
-    { label: "University", value: "University of Southern California" },
-    { label: "Degree", value: "B.A. Journalism" },
-    { label: "Graduation", value: "May 2025" },
-    { label: "Hometown", value: "Wilmette, IL" }
+    { label: "Minors", value: "N/A" },
+    { label: "GPA", value: "3.7" },
+    { label: "Hometown", value: "Winnetka, IL" },
+    { label: "Hobbies", value: "Skiing, playing pickup soccer, obsessive pdcast listening" },
+    { label: "Favorite Sandwich", value: "Pastrami" }
 ]
 
 export const SOCIAL_MEDIA_LIST: SocialMediaProps[] = [
-    { name: "Facebook", link: "https://www.youtube.com", icon: <Facebook sx={{color: lightTheme.primaryColor}}/> },
-    { name: "X", link: "https://www.youtube.com", icon: <X sx={{color: lightTheme.primaryColor}}/> },
-    { name: "Instagram", link: "https://www.youtube.com", icon: <Instagram sx={{color: lightTheme.primaryColor}}/> }
+    { name: "LinkedIn", link: "https://www.linkedin.com/in/jack-hallinan-a7562220b/", icon: <LinkedIn sx={{color: lightTheme.primaryColor}}/> },
+    { name: "X", link: "https://x.com/jackhallinan17", icon: <X sx={{color: lightTheme.primaryColor}}/> },
+    { name: "Spotify", link: "https://open.spotify.com/show/7ipJaqfqreC974LvPWZJa0", icon: <SpotifyIcon sx={{color: lightTheme.primaryColor}}/> }
 ]
 
 export const MY_WORK_LINKS: WorkLinkProps[] = [
-    { name: "Something about an article", url: "https://youtube.com", icon: <SportsFootball/>},
-    { name: "Something about an article 2", url: "https://youtube.com", icon: <SportsBar/>},
-    { name: "Something about an article 3", url: "https://youtube.com", icon: <SportsVolleyball/>},
-    { name: "Something about an article 4", url: "https://youtube.com", icon: <VolumeUp/>},
-    { name: "Something about an article 5", url: "https://youtube.com", icon: <SportsBaseball/>},
-    { name: "Something about an article 6", url: "https://youtube.com", icon: <SportsBasketball/>},
+    { name: "Fullerton to Freshman of the Year: The Maribel Flores journey", url: "https://dailytrojan.com/2024/03/01/from-fullerton-to-freshman-of-the-year-the-maribel-flores-journey/", icon: <SportsSoccer/>},
+    { name: "Notes from practice: The Muss Bus gets rolling", url: "https://www.uscannenbergmedia.com/2024/06/26/notes-from-practice-the-muss-bus-gets-rolling/", icon: <SportsBasketball/>},
+    { name: "Leroux earns Angel City massive three points on Juneteenth", url: "https://www.uscannenbergmedia.com/2024/06/20/leroux-earns-angel-city-massive-three-points-on-juneteenth/", icon: <SportsSoccer/>},
+    { name: "Rising Ballers: Casey Phair continues Angel City’s youth movement", url: "https://dailytrojan.com/2024/03/21/casey-phair-continues-angel-citys-youth-movement/", icon: <SportsSoccer/>},
+    { name: "USC Hops on the Muss Bus! Trojans Hire Eric Musselman as Men’s Basketball Head Coach", url: "https://open.spotify.com/episode/3HIR90QnlZ4J033Lw5XpyM", icon: <SportsBasketball/>},
+    { name: "What it means to be a Premier League in America", url: "https://www.uscannenbergmedia.com/2024/04/24/what-it-means-to-be-a-premier-league-fan-in-america/", icon: <SportsSoccer/>},
+    { name: "USC men’s basketball relies on defense to secure win versus Utah", url: "https://www.uscannenbergmedia.com/2024/02/15/usc-mens-basketball-relies-on-defense-to-secure-win-versus-utah/", icon: <SportsBasketball/>},
+    { name: "‘Challengers’ serves its audience a volley of emotions", url: "https://www.uscannenbergmedia.com/2024/05/01/challengers-serves-its-audience-a-volley-of-emotions/", icon: <Movie/>},
 ]

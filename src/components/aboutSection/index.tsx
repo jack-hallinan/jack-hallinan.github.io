@@ -21,7 +21,7 @@ const AboutMeSection = () => {
             <h2 style={{marginLeft: "1rem"}}>About Me</h2>
             <Divider/>
             <p style={{maxWidth: "50rem", marginLeft: "1rem"}}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">aliquip ex ea commodo consequat</Link>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">cupidatat non proident</Link>, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I’m a multimedia journalist with professional interests that span across the sports, media and entertainment industries. My mission is to publish stories on digital platforms in audio, video and written formats that cover each of these fields and where they intersect. I’ve covered professional and collegiate sporting events, profiled athletes on the rise and hosted a live, video-first soccer podcast. My skill set is still growing and so is my desire to tackle these stories head-on.
             </p>
         </Box>
     )

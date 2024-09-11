@@ -36,8 +36,8 @@ const WorkSection = () => {
             <Divider style={{marginTop: "0.5rem"}}/>
             <List>
                 {
-                    MY_WORK_LINKS.map((props: WorkLinkProps) => (
-                        <WorkItem {...props}/>
+                    MY_WORK_LINKS.map((props: WorkLinkProps, index: number) => (
+                        <WorkItem key={index} {...props}/>
                     ))
                 }
             </List>
