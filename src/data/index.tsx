@@ -31,7 +31,7 @@ export const BIO_SNIPPETS: BioSnippetProp[] = [
     { label: "Minors", value: "N/A" },
     { label: "GPA", value: "3.7" },
     { label: "Hometown", value: "Winnetka, IL" },
-    { label: "Hobbies", value: "Skiing, playing pickup soccer, obsessive pdcast listening" },
+    { label: "Hobbies", value: "Skiing, playing pickup soccer, obsessive podcast listening" },
     { label: "Favorite Sandwich", value: "Pastrami" }
 ]
 
@@ -50,4 +50,5 @@ export const MY_WORK_LINKS: WorkLinkProps[] = [
     { name: "What it means to be a Premier League in America", url: "https://www.uscannenbergmedia.com/2024/04/24/what-it-means-to-be-a-premier-league-fan-in-america/", icon: <SportsSoccer/>},
     { name: "USC men’s basketball relies on defense to secure win versus Utah", url: "https://www.uscannenbergmedia.com/2024/02/15/usc-mens-basketball-relies-on-defense-to-secure-win-versus-utah/", icon: <SportsBasketball/>},
     { name: "‘Challengers’ serves its audience a volley of emotions", url: "https://www.uscannenbergmedia.com/2024/05/01/challengers-serves-its-audience-a-volley-of-emotions/", icon: <Movie/>},
+    { name: "Presence: The Eb & Flow Yoga Studio Story", url: "https://www.the7times.com/the-businesses/eb-and-flow-yoga-studio-chicago-illinois", icon: <Article/>}
 ]
