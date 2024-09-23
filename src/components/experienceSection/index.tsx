@@ -29,9 +29,6 @@ const Wrapper = ({url, children}: {url?: string, children: ReactNode}) => {
     <ListItem
         sx={{
             color: 'black',
-            '&:hover': {
-                color: lightTheme.primaryColor,
-            },
             flexDirection: "column",
             alignItems: 'start'}}>
         {children}
