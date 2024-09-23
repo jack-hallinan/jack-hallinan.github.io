@@ -5,10 +5,11 @@ This is a React project built using Vite and hosted on GitHub Pages. Follow the 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
+- [Workflow](#workflow)
 - [Pulling and Pushing to GitHub](#pulling-and-pushing-to-github)
+- [Editing the Site](#editing-the-site)
 - [Previewing the Site](#previewing-the-site)
 - [Publishing the Site](#publishing-the-site)
-- [Editing the Site](#editing-the-site)
 
 ## Getting Started
 
@@ -29,6 +30,16 @@ This is a React project built using Vite and hosted on GitHub Pages. Follow the 
    ```bash
    npm install
    ```
+
+## Workflow
+
+To change the content follow these steps:
+
+1. Pull changes from github
+2. Edit the content
+3. Preview the content in dev mode
+4. Push the changes to github
+5. Deploy the new site
 
 ## Pulling and Pushing to GitHub
 
@@ -61,6 +72,32 @@ After making changes to the project, you can push them to GitHub with the follow
    ```bash
    git push origin main-page
    ```
+
+## Editing the Site
+
+Almost all data can be edited from the `src/data/index.tsx` file. To do so, add a new entry in the data arrays. Here are all the data arrays:
+
+- BIO_SNIPPETS
+  - label
+  - value
+- SOCIAL_MEDIA_LIST
+  - name
+  - link
+  - icon
+- MY_WORK_LINKS
+  - name
+  - url
+  - icon
+- EXPERIENCES
+  - company
+  - position
+  - duration
+  - url*
+  - description*
+
+*Denotes an optional argument.
+
+Finally, the `About Me` section must be edited from the `src/aboutSection/index.tsx` file.
 
 ## Previewing the Site
 
@@ -95,29 +132,3 @@ To deploy your site to GitHub Pages, follow these steps:
    ```
 
 This will publish your site to GitHub Pages. After deployment, you can access it at `https://jack-hallinan.github.io`.
-
-## Editing the Site
-
-Almost all data can be edited from the `src/data/index.tsx` file. To do so, add a new entry in the data arrays. Here are all the data arrays:
-
-- BIO_SNIPPETS
-  - label
-  - value
-- SOCIAL_MEDIA_LIST
-  - name
-  - link
-  - icon
-- MY_WORK_LINKS
-  - name
-  - url
-  - icon
-- EXPERIENCES
-  - company
-  - position
-  - duration
-  - url*
-  - description*
-
-*Denotes an optional argument.
-
-Finally, the `About Me` section must be edited from the `src/aboutSection/index.tsx` file.
