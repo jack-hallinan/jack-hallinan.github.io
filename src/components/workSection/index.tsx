@@ -14,9 +14,9 @@ const WorkItem = (props: WorkLinkProps) => {
     return (
         <ListItemButton
             sx={{
-                color: 'black', // Default text color
+                color: 'black',
                 '&:hover': {
-                    color: lightTheme.primaryColor, // Hover text color
+                    color: lightTheme.primaryColor,
                 },
                 gap: "1rem"
             }}
