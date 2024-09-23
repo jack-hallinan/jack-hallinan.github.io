@@ -61,7 +61,7 @@ const ExperienceSection = () => {
             <Divider/>
             <Box sx={{width: "100%", display:"flex", flexDirection:"column"}}>
             {
-                EXPERIENCES.map(props => <ExperienceInfo {...props}/>)
+                EXPERIENCES.map((props, index) => <ExperienceInfo key={index} {...props}/>)
             }
             </Box>
         </Box>
