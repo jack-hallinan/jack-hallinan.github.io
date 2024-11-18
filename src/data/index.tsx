@@ -39,6 +39,7 @@ export const SOCIAL_MEDIA_LIST: SocialMediaProps[] = [
 ]
 
 export const MY_WORK_LINKS: WorkLinkProps[] = [
+    { name: "Second-half recovery not enough to fuel USC to victory over Michigan", url: "https://www.uscannenbergmedia.com/2024/09/21/second-half-recovery-not-enough-to-fuel-usc-to-victory-over-michigan/", icon: <SportsFootball/>},
     { name: "'Shōgun' is already an Emmy's showstopper", url: "https://www.uscannenbergmedia.com/2024/09/13/shogun-is-already-an-emmys-showstopper/", icon: <Movie/>},
     { name: "Fullerton to Freshman of the Year: The Maribel Flores journey", url: "https://dailytrojan.com/2024/03/01/from-fullerton-to-freshman-of-the-year-the-maribel-flores-journey/", icon: <SportsSoccer/>},
     { name: "Notes from practice: The Muss Bus gets rolling", url: "https://www.uscannenbergmedia.com/2024/06/26/notes-from-practice-the-muss-bus-gets-rolling/", icon: <SportsBasketball/>},
