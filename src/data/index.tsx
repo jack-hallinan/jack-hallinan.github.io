@@ -17,6 +17,7 @@ import {
     SportsBar,
     VolumeUp,
     Movie,
+    Tv,
 } from "@mui/icons-material";
 import { SocialMediaProps } from "../components/bioSection/socialMediaBar";
 import { WorkLinkProps } from "../components/workSection";
@@ -39,6 +40,9 @@ export const SOCIAL_MEDIA_LIST: SocialMediaProps[] = [
 ]
 
 export const MY_WORK_LINKS: WorkLinkProps[] = [
+    { name: "The Water Cooler: Can Trojan basketball bring home the natty?", url: "https://youtu.be/Xej5Ae_hhgE?si=yYgMWbCAi4ZA6jrr&t=67", icon: <Tv/>},
+    { name: "Kings waste 3rd-period leads, lose to Chicago 4-3 in shootout", url: "https://www.uscannenbergmedia.com/2024/11/02/kings-waste-3rd-period-leads-lose-to-chicago-4-3-in-shootout/", icon: <SportsHockey/>},
+    { name: "With season three, 'Industry's' stock soared", url: "https://www.uscannenbergmedia.com/2024/10/07/with-season-three-industrys-stock-soared/", icon: <Movie/>},
     { name: "Second-half recovery not enough to fuel USC to victory over Michigan", url: "https://www.uscannenbergmedia.com/2024/09/21/second-half-recovery-not-enough-to-fuel-usc-to-victory-over-michigan/", icon: <SportsFootball/>},
     { name: "'Shōgun' is already an Emmy's showstopper", url: "https://www.uscannenbergmedia.com/2024/09/13/shogun-is-already-an-emmys-showstopper/", icon: <Movie/>},
     { name: "Fullerton to Freshman of the Year: The Maribel Flores journey", url: "https://dailytrojan.com/2024/03/01/from-fullerton-to-freshman-of-the-year-the-maribel-flores-journey/", icon: <SportsSoccer/>},
